@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffa200;
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #ffa200;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background: #192e77;
+}
+
+::-webkit-scrollbar-track {
+  background: #192e77;
+  margin-block: 5px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffa200;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  ::-webkit-scrollbar-track {
+    margin-block: 0px;
+    border-radius: 0;
+  }
+}
+
+.slick-dots li.slick-active button::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 1;
+}
+
+#contact {
+  border-radius: 16px;
+  background: white;
+}
