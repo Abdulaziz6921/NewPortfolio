@@ -7,24 +7,24 @@ import gsap from "gsap";
 import React, { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    const particles = document.querySelectorAll(".particle");
-    particles.forEach((particle) => {
-      gsap.to(particle, {
-        x: "random(-40, 40)",
-        y: "random(-40, 40)",
-        duration: "random(2, 4)",
-        repeat: -1,
-        yoyo: true,
-        ease: "none",
-      });
-    });
-  }, []);
+  // useEffect(() => {
+  //   const particles = document.querySelectorAll(".particle");
+  //   particles.forEach((particle) => {
+  //     gsap.to(particle, {
+  //       x: "random(-40, 40)",
+  //       y: "random(-40, 40)",
+  //       duration: "random(2, 4)",
+  //       repeat: -1,
+  //       yoyo: true,
+  //       ease: "none",
+  //     });
+  //   });
+  // }, []);
 
   return (
     <div>
       {/* Particle Background */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none z-50">
+      {/* <div className="fixed inset-0 overflow-hidden pointer-events-none z-50">
         {[...Array(50)].map((_, i) => (
           <div
             key={i}
@@ -35,7 +35,7 @@ function App() {
             }}
           />
         ))}
-      </div>
+      </div> */}
       <Navbar />
       <Home />
       <About />
