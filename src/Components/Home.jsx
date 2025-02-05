@@ -10,9 +10,8 @@ function Home() {
         setTime(false);
       }, 1000);
     };
-
     myFunc();
-  }, []);
+  }, [myFunc()]);
 
   let stl = {
     size: "relative px-[3%] w-full h-fit flex bg-gradient-to-b from-dark_like to-black/95 items-center justify-center text-white font-bold md:py-[3%] md:px-0",
