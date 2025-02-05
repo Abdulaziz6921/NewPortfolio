@@ -11,9 +11,7 @@ function Home() {
       }, 1000);
     };
 
-    return () => {
-      myFunc();
-    };
+    myFunc();
   }, []);
 
   let stl = {
