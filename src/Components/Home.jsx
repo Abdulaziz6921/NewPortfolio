@@ -4,14 +4,12 @@ import { BsArrowDown } from "react-icons/bs";
 function Home() {
   const [time, setTime] = useState(true);
 
-  useEffect(() => {
-    const myFunc = () => {
-      setTimeout(() => {
-        setTime(false);
-      }, 1000);
-    };
-    myFunc();
-  }, [myFunc()]);
+  const myFunc = () => {
+    setTimeout(() => {
+      setTime(false);
+    }, 1000);
+  };
+  myFunc();
 
   let stl = {
     size: "relative px-[3%] w-full h-fit flex bg-gradient-to-b from-dark_like to-black/95 items-center justify-center text-white font-bold md:py-[3%] md:px-0",
