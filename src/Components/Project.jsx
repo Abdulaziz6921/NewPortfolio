@@ -6,60 +6,68 @@ import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 function Project() {
   const content = [
     {
+      title: "To Do List",
+      description: "Built with HTML, CSS and JS",
+      link: "https://todolistbyabdulaziz.netlify.app",
       image: "./Images/ToDo List.jpg",
       media_image: "./Images/ToDo List md.jpg",
-      title: "To Do List",
-      description: "Done with HTML, CSS and JS",
-      link: "https://todolistbyabdulaziz.netlify.app",
+      status: "ready",
     },
     {
-      image: "./Images/Jimdo.jpg",
-      media_image: "./Images/Jimdo media.jpg",
-      title: "Clone of Jimdo",
-      description: "Done with HTML and Tailwind",
-      link: "https://jimdoclone.netlify.app/",
+      title: "X/Twitter Clone",
+      description: "Built with React+Vite and Tailwind",
+      link: "https://x-clone-by-abdulaziz.netlify.app",
+      image: "./Images/twitter.png",
+      media_image: "./Images/twitter md.jpg",
+      status: "ready",
     },
     {
+      title: "Posts",
+      description: "Built with React+Vite and Tailwind",
+      link: "https://projectofabdulaziz.netlify.app/",
       image: "./Images/posts.png",
       media_image: "./Images/posts md.jpg",
-      title: "Posts",
-      description: "Done with Vite, React and Tailwind",
-      link: "https://projectofabdulaziz.netlify.app/",
+      status: "ready",
     },
     {
+      title: "NoCode Clone",
+      description: "Built with Bootstrap and Scss",
+      link: "https://sitedonewithbootstrap.netlify.app/",
       image: "./Images/dwbtstrap.png",
       media_image: "./Images/dwbtstrap_media.jpg",
-      title: "Clone of Figma site",
-      description: "Done with Bootstrap and Scss",
-      link: "https://sitedonewithbootstrap.netlify.app/",
+      status: "ready",
     },
     {
+      title: "123movies Clone",
+      description: "Built with HTML, CSS and JS",
+      link: "https://123moviesclone.netlify.app/",
       image: "./Images/123.png",
       media_image: "./Images/123 md.jpg",
-      title: "Clone of 123movies",
-      description: "Done with HTML, CSS and JS",
-      link: "https://123moviesclone.netlify.app/",
+      status: "inProcess",
     },
     {
+      title: "CRUD",
+      description: "Built with Tailwind and React",
+      link: "https://crud-by-abdulaziz.netlify.app/",
       image: "./Images/crud.png",
       media_image: "./Images/crud_md.jpg",
-      title: "CRUD",
-      description: "Done with Tailwind and React",
-      link: "https://crud-by-abdulaziz.netlify.app/",
+      status: "ready",
     },
     {
-      image: "./Images/emaar.png",
-      media_image: "./Images/emaar md.jpg",
-      title: "Emaar",
-      description: "Done with HTML and Tailwind",
-      link: "https://emaartowers.netlify.app/",
+      title: "Fitness Guide",
+      description: "Built with React+Vite & Tailwind",
+      link: "https://fitness-video-guide.netlify.app",
+      image: "./Images/fitness.png",
+      media_image: "./Images/fitness md.jpg",
+      status: "ready",
     },
     {
-      image: "./Images/shopper.png",
-      media_image: "./Images/shopper md.jpg",
-      title: "Clone of Shopper",
+      title: "Shopper Clone",
       description: "Done with HTML and Sass",
       link: "https://shopperclone.netlify.app/",
+      image: "./Images/shopper.png",
+      media_image: "./Images/shopper md.jpg",
+      status: "inProcess",
     },
   ];
 
@@ -187,8 +195,13 @@ function Project() {
                     {item.title}
                   </h1>
                   <h1 className={stl.description}>{item.description}</h1>
-                  <a href={item.link} target="blank">
-                    <button className={stl.btn}>Visit site</button>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">
+                    <button
+                      className={stl.btn}
+                      disabled={item.status !== "ready"}
+                    >
+                      {item.status === "ready" ? "Visit site" : "In process"}
+                    </button>
                   </a>
                 </div>
                 <div className={stl.prjct_img}>
