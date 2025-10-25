@@ -30,7 +30,7 @@ function Project() {
       status: "ready",
     },
     {
-      title: "NoCode Clone",
+      title: "Learnico",
       description: "Built with Bootstrap and Scss",
       link: "https://sitedonewithbootstrap.netlify.app/",
       image: "./Images/dwbtstrap.png",

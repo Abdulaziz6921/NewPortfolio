@@ -1,5 +1,5 @@
-import React from "react";
 import Skill from "./Skill";
+import WorkExperience from "./WorkExperience";
 
 function About() {
   let stl = {
@@ -62,24 +62,27 @@ function About() {
             data-aos-delay="400"
           >
             My full name is <span className={stl.span}>Abdulaziz Tojiboev</span>
-            . I am a junior <span className={stl.span}>web developer</span> with
-            a specialization in
-            <span className={stl.span}> front-end development</span>. I have{" "}
-            <span className={stl.span}>completed a web development course</span>{" "}
-            at the "Algorithm" IT center, where I got all the theoretical
-            knowledge and some practice. Besides, I have{" "}
-            <span className={stl.span}>done self-study</span> and{" "}
-            <span className={stl.span}>completed some online courses</span> on
-            platforms like SoloLearn, W3Schools, and JavaScript.info to get
-            better acquainted with all necessary web technologies and techniques
-            for front-end development. So far, I have acquired{" "}
-            <span className={stl.span}>skills</span> in{" "}
+            . I am a<span className={stl.span}> Front-End Developer</span> who
+            loves bringing ideas to life through clean, responsive, and engaging
+            web experiences.
+            <br />
+            <br />I work with technologies like
             <span className={stl.span}>
-              Javascript, ReactJs, CSS3, SASS, Tailwind, Bootstrap
-            </span>{" "}
-            and <span className={stl.span}>HTML5</span>. I speak{" "}
-            <span className={stl.span}>English, Uzbek, Russian</span> and{" "}
-            <span className={stl.span}>some Korean</span> languages.
+              {" "}
+              JavaScript, React.js, HTML5, CSS3, SASS, Tailwind CSS,{" "}
+            </span>
+            and <span className={stl.span}> Bootstrap</span> to build modern,
+            user-friendly interfaces. I’m also passionate about continuous
+            learning always exploring new tools and techniques on
+            <span className={stl.span}> SoloLearn, W3Schools,</span> and
+            <span className={stl.span}> JavaScript.info</span>.
+            <br />
+            <br />I speak{" "}
+            <span className={stl.span}>English, Uzbek, and Russian</span>, and
+            I’m learning
+            <span className={stl.span}> Korean</span>. My goal is to create web
+            experiences that not only look great but feel smooth, intuitive, and
+            enjoyable to use.
           </p>
         </div>
       </div>
@@ -103,7 +106,7 @@ function About() {
           &#123;
         </a>
         <a
-          href="#project"
+          href="#experience"
           className={stl.tag_right}
           data-aos="fade-up-left"
           data-aos-duration="300000"
@@ -119,7 +122,7 @@ function About() {
             data-aos-duration="100000"
             data-aos-delay="300"
           >
-            Skills:
+            Skills
           </h1>
 
           <div className={stl.wrapper}>
@@ -203,6 +206,8 @@ function About() {
           </div>
         </div>
       </div>
+
+      <WorkExperience />
     </>
   );
 }
